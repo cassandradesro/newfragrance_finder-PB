@@ -23,7 +23,6 @@ var loopThroughQuestions = function() {
             element.classList.remove('active-question');
         }
     })
-
 };
 
 var goToNextQuestion = function(index){
@@ -34,17 +33,6 @@ var goToNextQuestion = function(index){
 
 btn.forEach(function (element, index){
   element.addEventListener("click", function(){
-
-    if (field.type === 'radio' && field.name) {
-            var group = document.getElementsByName(field.name);
-            if (group.length > 0) {
-                for (var i = 0; i < group.length; i++) {
-                    if (group[i].form !== field.form) continue; // Only check fields in current form
-                    group[i].classList.add(localSettings.fieldClass);
-                }
-                field = group[group.length - 1];
-            }
-        };
     goToNextQuestion(index);
   });
 });
