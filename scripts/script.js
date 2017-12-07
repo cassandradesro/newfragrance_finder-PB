@@ -52,7 +52,6 @@ var myModal = new popUp({
     //overlay: false
 });
 
-
 triggerButton.addEventListener('click', function(){
     myModal.open();
 });

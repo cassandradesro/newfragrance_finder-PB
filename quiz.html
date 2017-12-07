@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragrance Finder</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body class="bg">
+    <main>  
+
+
+        <ul id="progress-bar">
+            <li class="step active-step" id="step1">1</li>
+            <li class="step" id="step2">2</li>
+            <li class="step" id="step3">3</li>
+            <li class="step" id="step4">4</li>
+            <li class="step" id="step5">5</li>
+            <li class="step" id="step6">6</li>
+        </ul>
+
+
+
+        <form class="quiz" name="userInfo" data-validate>
+            
+            
+            <div class="question active-question" id="question1" name="userInfo" action="#" method="post" data-validate>
+
+                <strong>Where would you rather be?</strong>
+                <label class="label-normal">
+                    <input type="radio" name="radio-where" id="radio-1" required>
+                    Private library
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-where" id="radio-2" required>
+                    Sea shore
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-where" id="radio-3" required>
+                    Bakery
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-where" id="radio-4" required>
+                    Orange Grove
+                </label>                
+                <label class="label-normal">
+                    <input type="radio" name="radio-where" id="radio-5" required>
+                    Spice Market
+                </label>  
+                <button type="submit" class="btn">Next</button>
+            </div>
+
+
+
+
+            <div class="question" id="question2" name="userInfo" action="#" method="post" data-validate>
+                <strong>What do you naturally gravitate to?</strong>
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-6" required>
+                    Wood
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-7" required>
+                    Leather
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-8" required>
+                    Berries
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-9" required>
+                    Flowers
+                </label>                
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-10" required>
+                    Spices
+                </label>   
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-11" required>                
+                    Chocolate
+                </label> 
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-12" required>
+                    Oranges
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-gravitate" id="radio-13" required>
+                    Incense
+                </label>  
+
+                <button type="submit" class="btn">Next</button>
+            </div>
+
+
+
+            <div class="question" id="question3" name="userInfo" action="#" method="post" data-validate>
+                
+                <strong>What is absolutely your favorite drink?</strong>
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-14" required>
+                    Wine
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-15" required>
+                    Water
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-16" required>
+                    Juice/Smoothie
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-17" required>
+                    Whiskey
+                </label>                
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-3" required>
+                    Coffee
+                </label>   
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-18" required>                
+                    Herbal Tea
+                </label> 
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-19" required>
+                    Cocktail
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-drink" id="radio-20" required>
+                    Chocolate shake
+                </label> 
+                <button type="submit" class="btn">Next</button>
+            </div>
+
+
+
+            <div class="question" id="question4" name="userInfo" action="#" method="post" data-validate>
+                
+                <strong>Which season do you prefer?</strong>
+                <label class="label-normal">
+                    <input type="radio" name="radio-season" id="radio-21" required>
+                    Summer
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-season" id="radio-22" required>
+                    Spring
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-season" id="radio-23" required>
+                    Winter
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-season" id="radio-24" required>
+                    Fall
+                </label>                
+                <button type="submit" class="btn">Next</button>
+            
+            </div>
+
+
+
+
+
+            <div class="question" id="question5" name="userInfo" action="#" method="post" data-validate>
+                <strong>Who is your favorite celebrity?</strong>
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-29" required>
+                    Johnny Depp
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-30" required>
+                    Julia Roberts
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-31" required>
+                    Kristen Stewart
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-32" required>
+                    Robert Pattinson
+                </label>                
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-34" required>
+                    Dakota Johnson
+                </label>   
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-35" required>                               
+                    Amandla Stenberg
+                </label> 
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-36" required>
+                    Natalie Portman
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-5" id="radio-37" required>
+                    Charlize Theron
+                </label> 
+                <button type="submit" class="btn">Next</button>
+            </div> 
+
+
+
+            <div class="question" id="question6" name="userInfo" action="#" method="post" data-validate>
+                <strong>Which sensory experience would be the most appealing to you?</strong>
+                <label class="label-normal">
+                    <input type="radio" name="radio-6" id="radio-38" required>
+                    Enjoying a fruity cocktail and an ocean breeze
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-6" id="radio-39" required>
+                    Walking through a serene garden in full bloom
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-6" id="radio-40" required>
+                    Tasking exotic cuisines and decadent desserts
+                </label>
+                <label class="label-normal">
+                    <input type="radio" name="radio-6" id="radio-41" required>
+                    Adventuring off the grid and deep into nature
+                </label>                
+                <button id="trigger" class="trigger-button" type="button">Launch Modal</button>
+                </div>
+            </div> 
+        </form> 
+        <div id="content">
+            <h1>Look at me!</h1>
+            <p>I'm a modal window.</p>
+            <!-- <img src="img/fragrance1.jpg" alt="fragrance"> -->
+        </div>
+
+
+    </main>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/validate.js"></script>
+    <script>
+        validate.init({
+            fieldClass: 'invalid',
+            errorClass: 'invalid-message',
+            disableSubmit: true,
+            messageRangeUnderflow: "Please choose a field.",
+            afterRemoveError: function (field){
+                field.classList.add("valid");
+            }
+        });
+    </script>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
