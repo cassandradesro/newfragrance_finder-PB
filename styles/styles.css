@@ -144,3 +144,9 @@ label {
     font-style: italic;
     margin-bottom: 1em;
 }
+
+
+/*Modal*/
+#content {
+    display: none;
+}

@@ -4,6 +4,10 @@ var progressBar = document.querySelector("#progress-bar"),
     currentQuestion = 0,
     quizQuestions = document.querySelectorAll(".question"),
     btn = document.querySelectorAll(".btn");
+    myContent = document.getElementById('content');
+    triggerButton = document.getElementById('trigger');
+
+
 
 var loopThroughQuestions = function() {
     currentQuestion++;
@@ -23,6 +27,7 @@ var loopThroughQuestions = function() {
             element.classList.remove('active-question');
         }
     })
+
 };
 
 var goToNextQuestion = function(index){
@@ -33,9 +38,22 @@ var goToNextQuestion = function(index){
 
 btn.forEach(function (element, index){
   element.addEventListener("click", function(){
+    // Add Validation here, if the validation passes
+    // _this is the button
+    // then run goToNextQuestion()
+
     goToNextQuestion(index);
   });
 });
 
 
+var myModal = new popUp({
+    content: myContent,
+    //overlay: false
+});
+
+
+triggerButton.addEventListener('click', function(){
+    myModal.open();
+});
 
