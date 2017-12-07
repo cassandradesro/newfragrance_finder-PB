@@ -108,3 +108,39 @@ li:first-child::before {
 #question1{
 /*display: block;
 */}
+
+
+
+
+/*Validation*/
+input.valid {
+    background-color: rgba(0,255,0, 0.5);
+    border-color: green;
+}
+
+input.invalid {
+    background-color: rgba(255,102,102, 0.3);
+    border-color: red;
+}
+
+.invalid-message{
+    color: red;
+    font-weight: bold;
+}
+
+label {
+    font-size: 1rem;
+    padding: 0 0 0 3px;
+    opacity: 1;
+    transition: color ease-in-out .15s;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-style: italic;
+    margin-bottom: 1em;
+}
