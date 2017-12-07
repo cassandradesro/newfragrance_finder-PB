@@ -31,21 +31,21 @@ var loopThroughQuestions = function() {
 };
 
 var goToNextQuestion = function(index){
-    if (index < quizQuestions.length){
+    var field = document.querySelector('[type="radio"]');
+    var error = validate.hasError(field);
+
+    if (!error && index < quizQuestions.length) {
         loopThroughQuestions(index);
     }
 };
 
 btn.forEach(function (element, index){
   element.addEventListener("click", function(){
-    // Add Validation here, if the validation passes
-    // _this is the button
-    // then run goToNextQuestion()
-
     goToNextQuestion(index);
   });
 });
 
+validate.init();
 
 var myModal = new popUp({
     content: myContent,
