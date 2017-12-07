@@ -40,7 +40,8 @@ var goToNextQuestion = function(index){
 };
 
 btn.forEach(function (element, index){
-  element.addEventListener("click", function(){
+  element.addEventListener("click", function(e){
+    e.preventDefault();
     goToNextQuestion(index);
   });
 });
